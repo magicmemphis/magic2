@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>MAGIC</title>
+
+		<meta name="description" content="CSS 3D thumbnail preview concept">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/kort.css">
+		<link rel="stylesheet" type="text/css" href="css/rlinks.css">
+	</head>
+
+	<body style="background:url('img/earth.jpg')">
+		<div class="container">
+		<div class="navi">
+				<ul><li><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Conference</a></li>
+				<li><a href="#">Calendar</a></li>
+				<li><a href="#">Training</a></li>
+				<li><a href="#">Scholarships</a></li>
+
+				<li><a href="photos.html">Photos</a></li></ul>
+
+</br></br></br>
+		<h2 style="text-align:center;">Hover to move pictures!</h2>
+		<div style="position:absolute;left:450px;top:200px" class="thumb kort">
+			<img src="img/1.jpg" width="1000" height="700">
+			<img src="img/2.jpg" width="1000" height="700">
+			<img src="img/3.jpg" width="1000" height="700">
+			<img src="img/4.jpg" width="1000" height="700">
+			<img src="img/5.jpg" width="1000" height="700">
+      <img src="img/7.jpg" width="1000" height="700">
+			<img src="img/8.jpg" width="1000" height="700">
+      <img src="img/9.jpg" width="1000" height="700">
+      <img src="img/10.jpg" width="1000" height="700">
+      <img src="img/11.jpg" width="1000" height="700">
+      <img src="img/12.jpg" width="1000" height="700">
+      <img src="img/13.jpg" width="1000" height="700">
+      <img src="img/14.jpg" width="1000" height="700">
+      <img src="img/15.jpg" width="1000" height="700">
+      <img src="img/16.jpg" width="1000" height="700">
+      <img src="img/17.jpg" width="1000" height="700">
+      <img src="img/18.jpg" width="1000" height="700">
+      <img src="img/19.jpg" width="1000" height="700">
+      <img src="img/20.jpg" width="1000" height="700">
+      <img src="img/21.jpg" width="1000" height="700">
+      <img src="img/cpgis.jpg" width="1000" height="700">
+      <img src="img/lindzinn.jpg" width="1000" height="700">
+      <img src="img/tngic.jpg" width="1000" height="700">
+
+		</div>
+
+
+
+
+		<script>
+			// FF OS X animates this at 3-4 FPS when there are box-shadows
+			// on the images, hence the hack... Ugh :/
+			if( navigator.userAgent.match( /firefox/gi ) ) {
+				[].slice.call( document.querySelectorAll( '.thumb img' ) ).forEach(function( el ) { el.style.boxShadow = 'none'; });
+			}
+		</script>
+
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<script src="js/rlinks.js"></script>
+	<script src="js/kort.js"></script>
+
+	</body>
+</html>
